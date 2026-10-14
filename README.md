@@ -39,6 +39,7 @@ On Windows, install Node.js LTS from [nodejs.org](https://nodejs.org/en/download
 ## Development Notes
 
 - The public website requires no login. Only the contact form submits data to the API; content has local fallback placeholders so the page remains usable if the backend is offline.
+- Netlify deployment is configured in `netlify.toml` to build the Vite app from `frontend/`. Set `VITE_API_URL` in the Netlify site environment variables to the deployed Laravel API URL ending in `/api` to enable live portfolio content and contact submissions.
 - Nursing philosophy, values, skills, and learning examples are prompts, not claims about personal beliefs, clinical experience, certifications, or licensure. Update the profile seed/database values before publishing.
 - Never include identifiable patient photographs or confidential healthcare information in the gallery.
 - Use official Spotify, YouTube, or Quran.com pages for external listening/reading links. The project does not host copyrighted audio or unverified Qur'anic text.
